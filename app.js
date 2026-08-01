@@ -1212,8 +1212,48 @@ function formatLastActive(ts) {
   }
 }
 
+// 🔑 เปลี่ยนรหัสผ่านแอดมินได้ตรงนี้เลย (แก้เป็นรหัสของคุณเอง)
+const ADMIN_PASSWORD = "S@triwit";
+
+function isAdminUnlocked() {
+  return sessionStorage.getItem("admin_unlocked") === "1";
+}
+
 async function renderAdmin() {
   const el = document.getElementById("tab-admin");
+
+  if (!isAdminUnlocked()) {
+    el.innerHTML = `
+      <div class="rounded-2xl bg-white p-6 sm:p-8 max-w-sm mx-auto text-center" style="border:1px solid var(--border);">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4" style="background: var(--maroon);">
+          <i data-lucide="lock" class="w-6 h-6 text-white"></i>
+        </div>
+        <h2 class="font-display font-semibold text-lg mb-1">หน้านี้สำหรับคุณครูเท่านั้น</h2>
+        <p class="text-xs mb-4" style="color:var(--muted);">กรุณากรอกรหัสผ่านเพื่อดูแดชบอร์ด</p>
+        <form id="admin-login-form" class="flex flex-col gap-3">
+          <input type="password" id="admin-password" class="login-input" placeholder="รหัสผ่านแอดมิน" required>
+          <p id="admin-login-error" class="text-xs text-red-500 hidden">รหัสผ่านไม่ถูกต้อง</p>
+          <button type="submit" class="w-full py-2.5 rounded-xl text-white font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition" style="background:var(--maroon);">
+            <i data-lucide="unlock" class="w-4 h-4"></i> เข้าสู่แดชบอร์ด
+          </button>
+        </form>
+      </div>
+    `;
+    if (window.lucide) lucide.createIcons();
+
+    document.getElementById("admin-login-form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const input = document.getElementById("admin-password").value;
+      const errorEl = document.getElementById("admin-login-error");
+      if (input === ADMIN_PASSWORD) {
+        sessionStorage.setItem("admin_unlocked", "1");
+        renderAdmin();
+      } else {
+        errorEl.classList.remove("hidden");
+      }
+    });
+    return;
+  }
 
   if (!firebaseReady) {
     el.innerHTML = `
@@ -1233,9 +1273,14 @@ async function renderAdmin() {
   el.innerHTML = `
     <div class="flex items-center justify-between mb-2">
       <h2 class="font-display font-semibold text-xl">Admin Dashboard</h2>
-      <button id="admin-refresh" class="flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold transition hover:bg-[#fbeee0]" style="border:1px solid var(--border); color:var(--maroon);">
-        <i data-lucide="refresh-cw" class="w-4 h-4"></i>รีเฟรช
-      </button>
+      <div class="flex items-center gap-2">
+        <button id="admin-lock" class="flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold transition hover:bg-[#fbeee0]" style="border:1px solid var(--border); color:var(--muted);">
+          <i data-lucide="lock" class="w-4 h-4"></i><span class="hidden sm:inline">ล็อก</span>
+        </button>
+        <button id="admin-refresh" class="flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-semibold transition hover:bg-[#fbeee0]" style="border:1px solid var(--border); color:var(--maroon);">
+          <i data-lucide="refresh-cw" class="w-4 h-4"></i>รีเฟรช
+        </button>
+      </div>
     </div>
     <input type="text" id="admin-filter" placeholder="ค้นหาชื่อ หรือ ชั้น..." class="login-input font-thai mb-4" style="max-width:320px;">
     <div id="admin-table-wrap" class="rounded-2xl bg-white overflow-x-auto" style="border:1px solid var(--border);">
@@ -1245,6 +1290,10 @@ async function renderAdmin() {
   if (window.lucide) lucide.createIcons();
 
   document.getElementById("admin-refresh").addEventListener("click", loadAndRenderAdminTable);
+  document.getElementById("admin-lock").addEventListener("click", () => {
+    sessionStorage.removeItem("admin_unlocked");
+    renderAdmin();
+  });
   document.getElementById("admin-filter").addEventListener("input", (e) => {
     renderAdminTable(window.__adminStudentsCache || [], e.target.value);
   });
