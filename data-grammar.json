@@ -1,0 +1,616 @@
+{
+  "GRAMMAR": [
+    {
+      "unit": "Introduction 0.2",
+      "topics": [
+        {
+          "name": "Singular & Plural Nouns",
+          "explanation": "A singular noun names one person, place, or thing. A plural noun names more than one. Most nouns become plural by adding an ending, but some change their spelling completely.",
+          "tableRules": [
+            {
+              "rule": "Add -s",
+              "pattern": "Most nouns",
+              "examples": "book → books"
+            },
+            {
+              "rule": "Add -es",
+              "pattern": "-s, -ss, -sh, -ch, -x, -o",
+              "examples": "box → boxes, watch → watches"
+            },
+            {
+              "rule": "Change y → ies",
+              "pattern": "Consonant + y",
+              "examples": "baby → babies"
+            },
+            {
+              "rule": "Irregular",
+              "pattern": "Change completely",
+              "examples": "man → men, child → children, foot → feet"
+            },
+            {
+              "rule": "No change",
+              "pattern": "Stay the same",
+              "examples": "sheep → sheep, fish → fish"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I have one dog.",
+              "th": "ฉันมีสุนัขหนึ่งตัว"
+            },
+            {
+              "en": "She has three dogs.",
+              "th": "เธอมีสุนัขสามตัว"
+            },
+            {
+              "en": "There is a child in the garden.",
+              "th": "มีเด็กคนหนึ่งอยู่ในสวน"
+            },
+            {
+              "en": "There are five children in the garden.",
+              "th": "มีเด็กห้าคนอยู่ในสวน"
+            }
+          ]
+        },
+        {
+          "name": "Demonstratives (This, That, These, Those)",
+          "explanation": "Demonstratives point to a specific thing. They show two things at once: how close it is, and whether it is one thing or many.",
+          "tableRules": [
+            {
+              "rule": "This",
+              "pattern": "Singular + Near",
+              "examples": "This is my pencil."
+            },
+            {
+              "rule": "That",
+              "pattern": "Singular + Far",
+              "examples": "That is your bag."
+            },
+            {
+              "rule": "These",
+              "pattern": "Plural + Near",
+              "examples": "These are my shoes."
+            },
+            {
+              "rule": "Those",
+              "pattern": "Plural + Far",
+              "examples": "Those are her friends."
+            }
+          ],
+          "examples": [
+            {
+              "en": "This is my pencil.",
+              "th": "นี่คือดินสอของฉัน"
+            },
+            {
+              "en": "That is your bag.",
+              "th": "นั่นคือกระเป๋าของคุณ"
+            },
+            {
+              "en": "These are my shoes.",
+              "th": "นี่คือรองเท้าของฉัน"
+            },
+            {
+              "en": "Those are her friends.",
+              "th": "นั่นคือเพื่อนของเธอ"
+            }
+          ]
+        },
+        {
+          "name": "Imperatives",
+          "explanation": "Imperative sentences give commands, instructions, or requests. They start directly with the base form of the verb, with no subject and no 'to'.",
+          "tableRules": [
+            {
+              "rule": "Positive Command",
+              "pattern": "Base verb (No subject)",
+              "examples": "Open the door."
+            },
+            {
+              "rule": "Polite Request",
+              "pattern": "Please + verb / verb + please",
+              "examples": "Please sit down."
+            },
+            {
+              "rule": "Negative Command",
+              "pattern": "Don't + verb",
+              "examples": "Don't run in the hallway."
+            },
+            {
+              "rule": "Suggestion",
+              "pattern": "Let's + verb",
+              "examples": "Let's go to the library."
+            }
+          ],
+          "examples": [
+            {
+              "en": "Close the window, please.",
+              "th": "ช่วยปิดหน้าต่างด้วย"
+            },
+            {
+              "en": "Don't touch that.",
+              "th": "อย่าแตะอันนั้น"
+            },
+            {
+              "en": "Let's study together.",
+              "th": "มาเรียนด้วยกันเถอะ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "Unit 3",
+      "topics": [
+        {
+          "name": "Present continuous tense",
+          "explanation": "The present continuous describes an action that is happening right now, or a temporary situation happening around the present moment.",
+          "tableRules": [
+            {
+              "rule": "Structure",
+              "pattern": "S + am/is/are + verb-ing",
+              "examples": "I am reading."
+            },
+            {
+              "rule": "Verb to be",
+              "pattern": "I → am, He/She/It → is, You/We/They → are",
+              "examples": "He is cooking, They are playing."
+            },
+            {
+              "rule": "Add -ing",
+              "pattern": "Most verbs",
+              "examples": "play → playing"
+            },
+            {
+              "rule": "Double consonant",
+              "pattern": "1 Vowel + 1 Consonant",
+              "examples": "run → running"
+            },
+            {
+              "rule": "Drop -e",
+              "pattern": "Verbs ending in -e",
+              "examples": "write → writing"
+            },
+            {
+              "rule": "Keywords",
+              "pattern": "Time words",
+              "examples": "now, right now, at the moment, today"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I am reading a book right now.",
+              "th": "ฉันกำลังอ่านหนังสืออยู่ตอนนี้"
+            },
+            {
+              "en": "She is cooking dinner at the moment.",
+              "th": "เธอกำลังทำอาหารเย็นอยู่"
+            },
+            {
+              "en": "They are playing football in the yard.",
+              "th": "พวกเขากำลังเล่นฟุตบอลอยู่ในสนาม"
+            }
+          ]
+        },
+        {
+          "name": "Present simple Vs Present continuous tense",
+          "explanation": "Present simple describes habits, facts, and routines that are generally true. Present continuous describes an action in progress now or a temporary situation.",
+          "tableRules": [
+            {
+              "rule": "Present Simple",
+              "pattern": "Habits, facts, routines",
+              "examples": "Add -s/-es for he/she/it"
+            },
+            {
+              "rule": "Present Continuous",
+              "pattern": "Happening now / Temporarily",
+              "examples": "am/is/are + verb-ing"
+            },
+            {
+              "rule": "Simple Keywords",
+              "pattern": "Frequency adverbs",
+              "examples": "always, usually, every day"
+            },
+            {
+              "rule": "Continuous Keywords",
+              "pattern": "Time markers",
+              "examples": "now, at the moment, right now"
+            }
+          ],
+          "examples": [
+            {
+              "en": "I usually walk to school.",
+              "th": "ฉันเดินไปโรงเรียนเป็นประจำ"
+            },
+            {
+              "en": "I am walking to school now.",
+              "th": "ตอนนี้ฉันกำลังเดินไปโรงเรียน"
+            },
+            {
+              "en": "Water boils at 100°C.",
+              "th": "น้ำเดือดที่ 100 องศาเซลเซียส"
+            },
+            {
+              "en": "She is boiling water for tea right now.",
+              "th": "เธอกำลังต้มน้ำชงชาอยู่ตอนนี้"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "unit": "Unit 4",
+      "topics": [
+        {
+          "name": "Comparative adjectives",
+          "explanation": "Comparative adjectives compare two people, places, or things, showing that one has more (or less) of a quality than the other.",
+          "tableRules": [
+            {
+              "rule": "Add -er",
+              "pattern": "Short adjectives (1 syllable)",
+              "examples": "tall → taller"
+            },
+            {
+              "rule": "y → ier",
+              "pattern": "Adjectives ending in -y",
+              "examples": "happy → happier"
+            },
+            {
+              "rule": "Add -r",
+              "pattern": "Adjectives ending in -e",
+              "examples": "large → larger"
+            },
+            {
+              "rule": "more + adj.",
+              "pattern": "Long adjectives (2+ syllables)",
+              "examples": "beautiful → more beautiful"
+            },
+            {
+              "rule": "Irregular",
+              "pattern": "Change completely",
+              "examples": "good → better, bad → worse"
+            },
+            {
+              "rule": "Keyword",
+              "pattern": "adj. + than",
+              "examples": "taller than, better than"
+            }
+          ],
+          "examples": [
+            {
+              "en": "My brother is taller than me.",
+              "th": "พี่ชายของฉันสูงกว่าฉัน"
+            },
+            {
+              "en": "This book is more interesting than that one.",
+              "th": "หนังสือเล่มนี้น่าสนใจกว่าเล่มนั้น"
+            },
+            {
+              "en": "Today is colder than yesterday.",
+              "th": "วันนี้หนาวกว่าเมื่อวาน"
+            }
+          ]
+        },
+        {
+          "name": "Superlative adjectives",
+          "explanation": "Superlative adjectives describe the highest or lowest degree of a quality among three or more people, places, or things.",
+          "tableRules": [
+            {
+              "rule": "the + adj. + -est",
+              "pattern": "Short adjectives",
+              "examples": "tall → the tallest"
+            },
+            {
+              "rule": "y → iest",
+              "pattern": "Adjectives ending in -y",
+              "examples": "happy → the happiest"
+            },
+            {
+              "rule": "Add -st",
+              "pattern": "Adjectives ending in -e",
+              "examples": "large → the largest"
+            },
+            {
+              "rule": "the most + adj.",
+              "pattern": "Long adjectives",
+              "examples": "beautiful → the most beautiful"
+            },
+            {
+              "rule": "Irregular",
+              "pattern": "Change completely",
+              "examples": "good → the best, bad → the worst"
+            }
+          ],
+          "examples": [
+            {
+              "en": "Mount Everest is the tallest mountain in the world.",
+              "th": "ยอดเขาเอเวอเรสต์เป็นภูเขาที่สูงที่สุดในโลก"
+            },
+            {
+              "en": "This is the most beautiful beach I have visited.",
+              "th": "นี่คือชายหาดที่สวยที่สุดที่ฉันเคยไป"
+            },
+            {
+              "en": "She is the best student in the class.",
+              "th": "เธอเป็นนักเรียนที่ดีที่สุดในห้อง"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "GRAMMAR_QUIZ_A2_B1": [
+    {
+      "unit": "Introduction 0.2",
+      "topic": "Singular & Plural Nouns",
+      "question": "There are three _____ playing in the park right now.",
+      "options": [
+        "childs",
+        "children",
+        "childrens",
+        "child"
+      ],
+      "answer": 1,
+      "explanation": "child (เด็ก 1 คน) เป็นคำนามเปลี่ยนรูปเมื่อเป็นพหูพจน์ (Irregular plural) รูปพหูพจน์ที่ถูกต้องคือ children (เด็กหลายคน) โดยไม่ต้องเติม -s"
+    },
+    {
+      "unit": "Introduction 0.2",
+      "topic": "Singular & Plural Nouns",
+      "question": "Please put all the _____ on the top shelf.",
+      "options": [
+        "boxs",
+        "box",
+        "boxes",
+        "boxies"
+      ],
+      "answer": 2,
+      "explanation": "คำนามที่ลงท้ายด้วยตัว -x เมื่อต้องการเปลี่ยนเป็นพหูพจน์จะต้องเติม -es เช่น box → boxes"
+    },
+    {
+      "unit": "Introduction 0.2",
+      "topic": "Singular & Plural Nouns",
+      "question": "Wash your hands and put on clean _____ before dinner.",
+      "options": [
+        "sock",
+        "socks",
+        "sockes",
+        "a sock"
+      ],
+      "answer": 1,
+      "explanation": "ถุงเท้ามักใส่เป็นคู่ (2 ข้างขึ้นไป) ถือเป็นคำนามพหูพจน์ทั่วไปที่ลงท้ายด้วยตัว -k จึงเติม -s ได้ทันที (socks)"
+    },
+    {
+      "unit": "Introduction 0.2",
+      "topic": "Demonstratives (This, That, These, Those)",
+      "question": "Look at _____ beautiful flowers in my hand!",
+      "options": [
+        "these",
+        "those",
+        "this",
+        "that"
+      ],
+      "answer": 0,
+      "explanation": "ใช้ these ชี้สิ่งของหลายชิ้น (พหูพจน์) ที่อยู่ใกล้ตัวผู้พูด (in my hand - ในมือของฉัน)"
+    },
+    {
+      "unit": "Introduction 0.2",
+      "topic": "Demonstratives (This, That, These, Those)",
+      "question": "Who is _____ boy standing over there near the tree?",
+      "options": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "answer": 1,
+      "explanation": "ใช้ that ชี้คน 1 คน (เอกพจน์) ที่ยืนอยู่ไกลออกไป (over there - ตรงนู้น)"
+    },
+    {
+      "unit": "Introduction 0.2",
+      "topic": "Demonstratives (This, That, These, Those)",
+      "question": "I really liked _____ cookies you baked yesterday. They were delicious!",
+      "options": [
+        "this",
+        "that",
+        "those",
+        "these"
+      ],
+      "answer": 2,
+      "explanation": "ใช้ those อ้างถึงสิ่งของหลายชิ้น (พหูพจน์) ที่ไม่ได้อยู่ตรงหน้าขณะนี้ หรือเป็นเหตุการณ์ที่ผ่านไปแล้ว (baked yesterday)"
+    },
+    {
+      "unit": "Introduction 0.2",
+      "topic": "Imperatives",
+      "question": "_____ the door, please. It is very cold outside.",
+      "options": [
+        "Closing",
+        "Close",
+        "To close",
+        "Closed"
+      ],
+      "answer": 1,
+      "explanation": "ประโยคสั่งการหรือขอร้อง ต้องขึ้นต้นด้วยกริยาช่องเดิม (Base Verb) ไม่ต้องเติม -ing, -ed หรือ to นำหน้า"
+    },
+    {
+      "unit": "Introduction 0.2",
+      "topic": "Imperatives",
+      "question": "_____ late for class tomorrow! The test starts at 8:00 AM.",
+      "options": [
+        "Don't be",
+        "Not be",
+        "Be not",
+        "Doesn't be"
+      ],
+      "answer": 0,
+      "explanation": "ประโยคสั่งห้ามหรือเตือนแบบปฏิเสธ ใช้โครงสร้าง Don't + Verb ช่องเดิม (Don't be late)"
+    },
+    {
+      "unit": "Introduction 0.2",
+      "topic": "Imperatives",
+      "question": "It is a beautiful day! _____ go for a walk in the park.",
+      "options": [
+        "Let's",
+        "Don't",
+        "Let",
+        "We"
+      ],
+      "answer": 0,
+      "explanation": "การชวนเพื่อนทำกิจกรรมร่วมกัน ใช้โครงสร้าง Let's + Verb ช่องเดิม (Let's go...)"
+    },
+    {
+      "unit": "Unit 3",
+      "topic": "Present continuous tense",
+      "question": "Listen! Someone _____ the piano in the living room.",
+      "options": [
+        "plays",
+        "is playing",
+        "play",
+        "are playing"
+      ],
+      "answer": 1,
+      "explanation": "เหตุการณ์ที่กำลังเกิดขึ้นขณะพูด (สังเกตจากคำว่า Listen! - ฟังซิ!) ใช้ Present Continuous (is/am/are + V.ing) ประธานเป็น Someone (เอกพจน์) ใช้ is playing"
+    },
+    {
+      "unit": "Unit 3",
+      "topic": "Present continuous tense",
+      "question": "Look out the window! It _____ heavily right now.",
+      "options": [
+        "rains",
+        "is raining",
+        "rain",
+        "raining"
+      ],
+      "answer": 1,
+      "explanation": "มีคำบอกเวลา right now (ตอนนี้) แสดงว่ากำลังเกิดขึ้น ใช้ Present Continuous ประธาน It ใช้คู่กับ is raining"
+    },
+    {
+      "unit": "Unit 3",
+      "topic": "Present continuous tense",
+      "question": "They _____ their homework at the moment; they are watching TV.",
+      "options": [
+        "aren't doing",
+        "don't do",
+        "not doing",
+        "isn't doing"
+      ],
+      "answer": 0,
+      "explanation": "ประโยคปฏิเสธของเหตุการณ์ที่กำลังทำ ณ ตอนนี้ (at the moment) ประธาน They ใช้รูปปฏิเสธคือ aren't doing"
+    },
+    {
+      "unit": "Unit 3",
+      "topic": "Present simple Vs Present continuous tense",
+      "question": "Tom usually _____ to school by bus, but today he _____ his bicycle.",
+      "options": [
+        "goes / rides",
+        "is going / rides",
+        "goes / is riding",
+        "is going / is riding"
+      ],
+      "answer": 2,
+      "explanation": "สิ่งที่ทำเป็นประจำ (usually) ใช้ Present Simple (goes) ส่วนสิ่งที่ทำชั่วคราวแค่วันนี้ (today) ใช้ Present Continuous (is riding)"
+    },
+    {
+      "unit": "Unit 3",
+      "topic": "Present simple Vs Present continuous tense",
+      "question": "I _____ the answer to this question right now.",
+      "options": [
+        "am knowing",
+        "know",
+        "knows",
+        "am know"
+      ],
+      "answer": 1,
+      "explanation": "คำว่า know (รู้) เป็น Stative Verb (กริยาแสดงสภาวะทางความคิด) ไม่ใช้ในรูป -ing แม้จะมีคำว่า right now ก็ตาม"
+    },
+    {
+      "unit": "Unit 3",
+      "topic": "Present simple Vs Present continuous tense",
+      "question": "My father _____ dinner for our family every Sunday.",
+      "options": [
+        "is cooking",
+        "cooks",
+        "cook",
+        "cooking"
+      ],
+      "answer": 1,
+      "explanation": "กิจวัตรประจำวันที่ทำเป็นประจำทุกวันอาทิตย์ (every Sunday) ใช้ Present Simple ประธานเอกพจน์ (My father) กริยาต้องเติม -s (cooks)"
+    },
+    {
+      "unit": "Unit 4",
+      "topic": "Comparative adjectives",
+      "question": "An elephant is much _____ than a horse.",
+      "options": [
+        "bigger",
+        "biger",
+        "more big",
+        "biggest"
+      ],
+      "answer": 0,
+      "explanation": "คำสั้นพยางค์เดียวที่มีสระ 1 ตัว และตัวสะกด 1 ตัว (big) เมื่อทำเป็นขั้นกว่า ต้องเพิ่มตัวสะกดอีก 1 ตัวแล้วเติม -er → bigger than"
+    },
+    {
+      "unit": "Unit 4",
+      "topic": "Comparative adjectives",
+      "question": "Learning English is _____ than learning history for me.",
+      "options": [
+        "interestinger",
+        "more interesting",
+        "most interesting",
+        "as interesting"
+      ],
+      "answer": 1,
+      "explanation": "คำคุณศัพท์หลายพยางค์ (in-ter-est-ing) เมื่อเปรียบเทียบขั้นกว่า ต้องใช้ more นำหน้า → more interesting than"
+    },
+    {
+      "unit": "Unit 4",
+      "topic": "Comparative adjectives",
+      "question": "My new phone is _____ than my old one.",
+      "options": [
+        "gooder",
+        "better",
+        "more good",
+        "best"
+      ],
+      "answer": 1,
+      "explanation": "คำว่า good เป็นคำยกเว้น เมื่อเปลี่ยนเป็นขั้นกว่าจะเปลี่ยนรูปเป็น better (ไม่ใช้ gooder หรือ more good)"
+    },
+    {
+      "unit": "Unit 4",
+      "topic": "Superlative adjectives",
+      "question": "Russia is _____ country in the world.",
+      "options": [
+        "the largest",
+        "largest",
+        "larger",
+        "the most large"
+      ],
+      "answer": 0,
+      "explanation": "การเปรียบเทียบขั้นสุด (Superlative) ของคำพยางค์สั้น ต้องมี the นำหน้าเสมอ และเติม -st / -est → the largest"
+    },
+    {
+      "unit": "Unit 4",
+      "topic": "Superlative adjectives",
+      "question": "Who is _____ student in your classroom?",
+      "options": [
+        "tall",
+        "taller",
+        "the tallest",
+        "most tall"
+      ],
+      "answer": 2,
+      "explanation": "การเปรียบเทียบหาคนที่ \"ที่สุด\" ในกลุ่ม/ห้องเรียน ใช้โครงสร้าง the + adj-est → the tallest"
+    },
+    {
+      "unit": "Unit 4",
+      "topic": "Superlative adjectives",
+      "question": "Today is _____ day of my life! I passed my exam!",
+      "options": [
+        "the goodest",
+        "the best",
+        "the better",
+        "best"
+      ],
+      "answer": 1,
+      "explanation": "คำว่า good รูปขั้นสุดที่ถูกต้องคือ the best (ดีที่สุด)"
+    }
+  ]
+}

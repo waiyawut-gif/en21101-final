@@ -1,0 +1,658 @@
+{
+  "VOCAB_SETS": [
+    {
+      "key": "unit3_part1",
+      "group": "Unit 3",
+      "title": "Clothes around the world",
+      "icon": "shirt",
+      "category": "Clothes",
+      "badgeBg": "#dbeafe",
+      "badgeText": "#1d4ed8",
+      "words": [
+        {
+          "en": "a belt",
+          "th": "เข็มขัด",
+          "ex": "He wears a leather belt with his trousers."
+        },
+        {
+          "en": "a cap",
+          "th": "หมวกแก๊ป",
+          "ex": "She put on a cap to block the sun."
+        },
+        {
+          "en": "a scarf",
+          "th": "ผ้าพันคอ",
+          "ex": "He wrapped a warm scarf around his neck."
+        },
+        {
+          "en": "a swimsuit",
+          "th": "ชุดว่ายน้ำ",
+          "ex": "She packed her swimsuit for the beach trip."
+        },
+        {
+          "en": "a uniform",
+          "th": "เครื่องแบบ / ชุดยูนิฟอร์ม",
+          "ex": "All students must wear their school uniform."
+        },
+        {
+          "en": "dress",
+          "th": "ชุดเดรส / ชุดกระโปรง",
+          "ex": "She wore a pretty dress to the party."
+        },
+        {
+          "en": "gloves",
+          "th": "ถุงมือ",
+          "ex": "She wears warm gloves to protect her hands."
+        },
+        {
+          "en": "hat",
+          "th": "หมวก",
+          "ex": "He put on a hat to stay cool in the sun."
+        },
+        {
+          "en": "jacket",
+          "th": "เสื้อแจ็กเก็ต",
+          "ex": "Don't forget your jacket, it is cold outside."
+        },
+        {
+          "en": "jeans",
+          "th": "กางเกงยีนส์",
+          "ex": "He likes wearing blue jeans every weekend."
+        },
+        {
+          "en": "shirt",
+          "th": "เสื้อเชิ้ต",
+          "ex": "My father wears a white shirt to work."
+        },
+        {
+          "en": "shoes",
+          "th": "รองเท้า",
+          "ex": "She bought new shoes for the school trip."
+        },
+        {
+          "en": "shorts",
+          "th": "กางเกงขาสั้น",
+          "ex": "The boys wore shorts to play football."
+        },
+        {
+          "en": "skirt",
+          "th": "กระโปรง",
+          "ex": "She wore a blue skirt with her uniform."
+        },
+        {
+          "en": "socks",
+          "th": "ถุงเท้า",
+          "ex": "Put on clean socks before you wear your shoes."
+        },
+        {
+          "en": "tie",
+          "th": "เนกไท",
+          "ex": "He wore a red tie for the interview."
+        },
+        {
+          "en": "top",
+          "th": "เสื้อตัวบน",
+          "ex": "She bought a new top to match her jeans."
+        },
+        {
+          "en": "trainers",
+          "th": "รองเท้าผ้าใบ",
+          "ex": "He bought new trainers for running in sports class."
+        },
+        {
+          "en": "trousers",
+          "th": "กางเกงขายาว",
+          "ex": "He wore black trousers with his shirt."
+        },
+        {
+          "en": "T-shirt",
+          "th": "เสื้อยืด",
+          "ex": "She wore a yellow T-shirt to the picnic."
+        },
+        {
+          "en": "beautiful",
+          "th": "สวยงาม",
+          "ex": "That is a beautiful dress you are wearing."
+        },
+        {
+          "en": "big",
+          "th": "ใหญ่",
+          "ex": "This jacket is too big for me."
+        },
+        {
+          "en": "black",
+          "th": "สีดำ",
+          "ex": "He always wears a black uniform to work."
+        },
+        {
+          "en": "colourful",
+          "th": "มีสีสันสดใส",
+          "ex": "She likes wearing colourful clothes in summer."
+        },
+        {
+          "en": "cream",
+          "th": "สีครีม",
+          "ex": "She bought a cream coloured scarf for winter."
+        },
+        {
+          "en": "dark",
+          "th": "เข้ม / มืด",
+          "ex": "He prefers dark colours like navy and black."
+        },
+        {
+          "en": "long",
+          "th": "ยาว",
+          "ex": "She wore a long skirt to the wedding."
+        },
+        {
+          "en": "pink",
+          "th": "สีชมพู",
+          "ex": "My sister has a pink dress for her birthday."
+        },
+        {
+          "en": "pretty",
+          "th": "สวย / น่ารัก",
+          "ex": "That is a pretty hat you bought."
+        },
+        {
+          "en": "red",
+          "th": "สีแดง",
+          "ex": "She wore a red dress to the party."
+        },
+        {
+          "en": "short",
+          "th": "สั้น",
+          "ex": "He wore short trousers because it was hot."
+        }
+      ]
+    },
+    {
+      "key": "unit3_part2",
+      "group": "Unit 3",
+      "title": "Character types",
+      "icon": "smile",
+      "category": "Character",
+      "badgeBg": "#ede9fe",
+      "badgeText": "#7c3aed",
+      "words": [
+        {
+          "en": "bad",
+          "th": "ไม่ดี / แย่",
+          "ex": "It is bad to lie to your friends."
+        },
+        {
+          "en": "boring",
+          "th": "น่าเบื่อ",
+          "ex": "He thought the long lesson was boring."
+        },
+        {
+          "en": "clever",
+          "th": "ฉลาด",
+          "ex": "She is a clever student who solves problems fast."
+        },
+        {
+          "en": "friendly",
+          "th": "เป็นกันเอง",
+          "ex": "Our new neighbour is very friendly and kind."
+        },
+        {
+          "en": "funny",
+          "th": "ตลก / สนุกสนาน",
+          "ex": "He told a funny joke that made everyone laugh."
+        },
+        {
+          "en": "good",
+          "th": "ดี",
+          "ex": "She is a good student who studies hard."
+        },
+        {
+          "en": "happy",
+          "th": "มีความสุข",
+          "ex": "She felt happy when she passed her exam."
+        },
+        {
+          "en": "honest",
+          "th": "ซื่อสัตย์",
+          "ex": "He is honest and always tells the truth."
+        },
+        {
+          "en": "horrible",
+          "th": "แย่มาก / ร้ายกาจ",
+          "ex": "The weather today was horrible and rainy."
+        },
+        {
+          "en": "interesting",
+          "th": "น่าสนใจ",
+          "ex": "The science lesson was very interesting today."
+        },
+        {
+          "en": "kind",
+          "th": "ใจดี",
+          "ex": "She is always kind to everyone she meets."
+        },
+        {
+          "en": "nice",
+          "th": "นิสัยดี / น่ารัก",
+          "ex": "My teacher is very nice and patient."
+        },
+        {
+          "en": "popular",
+          "th": "เป็นที่นิยม",
+          "ex": "He is popular because he is friendly to everyone."
+        },
+        {
+          "en": "quiet",
+          "th": "เงียบขรึม",
+          "ex": "She is quiet and likes to read alone."
+        },
+        {
+          "en": "sad",
+          "th": "เศร้า",
+          "ex": "He felt sad when his dog was sick."
+        },
+        {
+          "en": "serious",
+          "th": "จริงจัง",
+          "ex": "The teacher looked serious about the test results."
+        },
+        {
+          "en": "brilliant",
+          "th": "ฉลาดปราดเปรื่อง",
+          "ex": "She has a brilliant idea for the school project."
+        },
+        {
+          "en": "caring",
+          "th": "เอาใจใส่",
+          "ex": "My mother is caring and always helps others."
+        },
+        {
+          "en": "confident",
+          "th": "มั่นใจในตัวเอง",
+          "ex": "He felt confident before his English speech."
+        },
+        {
+          "en": "creative",
+          "th": "มีความคิดสร้างสรรค์",
+          "ex": "He is very creative and likes to paint pictures."
+        },
+        {
+          "en": "hard-working",
+          "th": "ขยันทำงาน",
+          "ex": "She is a hard-working student who never gives up."
+        },
+        {
+          "en": "organised",
+          "th": "มีระเบียบ",
+          "ex": "He keeps his desk very organised and clean."
+        },
+        {
+          "en": "relaxed",
+          "th": "ผ่อนคลาย",
+          "ex": "We felt relaxed during the summer holiday."
+        },
+        {
+          "en": "shy",
+          "th": "ขี้อาย",
+          "ex": "He is shy and does not like speaking in public."
+        }
+      ]
+    },
+    {
+      "key": "unit4_part1",
+      "group": "Unit 4",
+      "title": "Houses & Rooms",
+      "icon": "door-open",
+      "category": "Houses & Rooms",
+      "badgeBg": "#dcfce7",
+      "badgeText": "#15803d",
+      "words": [
+        {
+          "en": "balcony",
+          "th": "ระเบียง",
+          "ex": "We drank tea on the balcony every morning."
+        },
+        {
+          "en": "bathroom",
+          "th": "ห้องน้ำ",
+          "ex": "She cleaned the bathroom before her guests arrived."
+        },
+        {
+          "en": "bedroom",
+          "th": "ห้องนอน",
+          "ex": "His bedroom is on the second floor."
+        },
+        {
+          "en": "dining room",
+          "th": "ห้องรับประทานอาหาร",
+          "ex": "We eat dinner together in the dining room."
+        },
+        {
+          "en": "flat",
+          "th": "แฟลต / อพาร์ตเมนต์",
+          "ex": "They live in a small flat in the city."
+        },
+        {
+          "en": "hall",
+          "th": "ห้องโถง",
+          "ex": "Take off your shoes in the hall, please."
+        },
+        {
+          "en": "kitchen",
+          "th": "ห้องครัว",
+          "ex": "My mother is cooking dinner in the kitchen."
+        },
+        {
+          "en": "living room",
+          "th": "ห้องนั่งเล่น",
+          "ex": "We watch TV together in the living room."
+        },
+        {
+          "en": "bath",
+          "th": "อ่างอาบน้ำ",
+          "ex": "She filled the bath with warm water."
+        },
+        {
+          "en": "bed",
+          "th": "เตียงนอน",
+          "ex": "He jumped onto his bed after a long day."
+        },
+        {
+          "en": "cupboard",
+          "th": "ตู้เก็บของ",
+          "ex": "She put the plates back in the cupboard."
+        },
+        {
+          "en": "desk",
+          "th": "โต๊ะเขียนหนังสือ",
+          "ex": "He does his homework at his desk."
+        },
+        {
+          "en": "door",
+          "th": "ประตู",
+          "ex": "Please close the door when you leave."
+        },
+        {
+          "en": "floor",
+          "th": "พื้น / ชั้น",
+          "ex": "The toys are scattered all over the floor."
+        },
+        {
+          "en": "fridge",
+          "th": "ตู้เย็น",
+          "ex": "There is fresh milk in the fridge."
+        },
+        {
+          "en": "oven",
+          "th": "เตาอบ",
+          "ex": "She baked cookies in the oven."
+        },
+        {
+          "en": "shower",
+          "th": "ฝักบัวอาบน้ำ",
+          "ex": "He takes a shower every morning before school."
+        },
+        {
+          "en": "sink",
+          "th": "อ่างล้างจาน / ล้างหน้า",
+          "ex": "Please wash the dishes in the sink."
+        },
+        {
+          "en": "sofa",
+          "th": "โซฟา",
+          "ex": "The cat is sleeping on the sofa."
+        },
+        {
+          "en": "table",
+          "th": "โต๊ะ",
+          "ex": "We put the food on the table."
+        },
+        {
+          "en": "toilet",
+          "th": "ชักโครก",
+          "ex": "The toilet in the bathroom needs cleaning."
+        },
+        {
+          "en": "window",
+          "th": "หน้าต่าง",
+          "ex": "She opened the window to let in fresh air."
+        }
+      ]
+    },
+    {
+      "key": "unit4_part2",
+      "group": "Unit 4",
+      "title": "Places & Geographical features",
+      "icon": "map-pin",
+      "category": "Places",
+      "badgeBg": "#ffedd5",
+      "badgeText": "#c2410c",
+      "words": [
+        {
+          "en": "bank",
+          "th": "ธนาคาร",
+          "ex": "My father went to the bank to withdraw money."
+        },
+        {
+          "en": "car park",
+          "th": "ลานจอดรถ",
+          "ex": "We left our car in the car park."
+        },
+        {
+          "en": "cinema",
+          "th": "โรงภาพยนตร์",
+          "ex": "We watched a new movie at the cinema."
+        },
+        {
+          "en": "city",
+          "th": "เมืองใหญ่",
+          "ex": "Bangkok is a very busy city."
+        },
+        {
+          "en": "hospital",
+          "th": "โรงพยาบาล",
+          "ex": "She visited her grandmother in the hospital."
+        },
+        {
+          "en": "restaurant",
+          "th": "ร้านอาหาร",
+          "ex": "We had dinner at a Thai restaurant."
+        },
+        {
+          "en": "road",
+          "th": "ถนน",
+          "ex": "Be careful when you cross the road."
+        },
+        {
+          "en": "shop",
+          "th": "ร้านค้า",
+          "ex": "She bought some bread from the shop."
+        },
+        {
+          "en": "supermarket",
+          "th": "ซูเปอร์มาร์เก็ต",
+          "ex": "My mother buys vegetables at the supermarket."
+        },
+        {
+          "en": "village",
+          "th": "หมู่บ้าน",
+          "ex": "They live in a small village near the mountains."
+        },
+        {
+          "en": "beaches",
+          "th": "ชายหาด",
+          "ex": "Phuket has many beautiful beaches."
+        },
+        {
+          "en": "buildings",
+          "th": "ตึก / อาคาร",
+          "ex": "The city has many tall buildings."
+        },
+        {
+          "en": "coast",
+          "th": "ชายฝั่ง",
+          "ex": "We drove along the coast to see the sea."
+        },
+        {
+          "en": "countryside",
+          "th": "ชนบท",
+          "ex": "We spent the weekend in the peaceful countryside."
+        },
+        {
+          "en": "desert",
+          "th": "ทะเลทราย",
+          "ex": "It rarely rains in the desert."
+        },
+        {
+          "en": "field",
+          "th": "ทุ่งนา / ทุ่งหญ้า",
+          "ex": "The farmer grows rice in the field."
+        },
+        {
+          "en": "forests",
+          "th": "ป่าไม้",
+          "ex": "There are many forests in the north of Thailand."
+        },
+        {
+          "en": "hill",
+          "th": "เนินเขา",
+          "ex": "We climbed the hill to see the sunset."
+        },
+        {
+          "en": "islands",
+          "th": "เกาะต่างๆ",
+          "ex": "Thailand has many beautiful islands."
+        },
+        {
+          "en": "lake",
+          "th": "ทะเลสาบ",
+          "ex": "We went fishing at the lake."
+        },
+        {
+          "en": "ocean",
+          "th": "มหาสมุทร",
+          "ex": "The ocean is much bigger than a sea."
+        },
+        {
+          "en": "rainforests",
+          "th": "ป่าฝน",
+          "ex": "Rainforests are home to many kinds of animals."
+        },
+        {
+          "en": "river",
+          "th": "แม่น้ำ",
+          "ex": "The Chao Phraya River flows through Bangkok."
+        },
+        {
+          "en": "square",
+          "th": "จัตุรัส",
+          "ex": "People gathered in the square to celebrate."
+        },
+        {
+          "en": "stream",
+          "th": "ลำธาร",
+          "ex": "A small stream runs through the forest."
+        },
+        {
+          "en": "street",
+          "th": "ถนน",
+          "ex": "There are many shops on this street."
+        },
+        {
+          "en": "valley",
+          "th": "หุบเขา",
+          "ex": "The village lies in a green valley."
+        },
+        {
+          "en": "waterfall",
+          "th": "น้ำตก",
+          "ex": "We took photos in front of the waterfall."
+        },
+        {
+          "en": "wood",
+          "th": "ป่าไม้",
+          "ex": "We walked through the wood near our village."
+        },
+        {
+          "en": "ancient",
+          "th": "เก่าแก่ / โบราณ",
+          "ex": "We visited an ancient temple in Ayutthaya."
+        },
+        {
+          "en": "busy",
+          "th": "คึกคัก / วุ่นวาย",
+          "ex": "The market was busy on Saturday morning."
+        },
+        {
+          "en": "deep",
+          "th": "ลึก",
+          "ex": "The lake is very deep near the middle."
+        },
+        {
+          "en": "dry",
+          "th": "แห้งแล้ง",
+          "ex": "The desert is hot and dry all year."
+        },
+        {
+          "en": "famous",
+          "th": "มีชื่อเสียง",
+          "ex": "The Eiffel Tower is a famous landmark in Paris."
+        },
+        {
+          "en": "large",
+          "th": "ใหญ่",
+          "ex": "Russia is a large country in the world."
+        },
+        {
+          "en": "modern",
+          "th": "ทันสมัย",
+          "ex": "The city has many modern buildings."
+        },
+        {
+          "en": "narrow",
+          "th": "แคบ",
+          "ex": "The street was too narrow for two cars."
+        },
+        {
+          "en": "quiet",
+          "th": "เงียบสงบ",
+          "ex": "The countryside is quiet and peaceful."
+        },
+        {
+          "en": "shallow",
+          "th": "ตื้น",
+          "ex": "The water near the beach is shallow."
+        },
+        {
+          "en": "short",
+          "th": "สั้น / สั้นเตี้ย",
+          "ex": "It was a short walk to the village."
+        },
+        {
+          "en": "tall",
+          "th": "สูง",
+          "ex": "The mountain is very tall and covered in snow."
+        },
+        {
+          "en": "thick",
+          "th": "ดกหนา / ทึบ",
+          "ex": "The forest was thick with tall trees."
+        },
+        {
+          "en": "wet",
+          "th": "เปียก / ชื้น",
+          "ex": "The ground was wet after the rain."
+        },
+        {
+          "en": "wide",
+          "th": "กว้าง",
+          "ex": "The river is wide near the coast."
+        },
+        {
+          "en": "architecture",
+          "th": "สถาปัตยกรรม",
+          "ex": "The city is famous for its modern architecture."
+        }
+      ]
+    }
+  ]
+}
