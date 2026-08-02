@@ -1318,7 +1318,7 @@ function renderAdminTable(students, filterText) {
   const q = (filterText || "").trim().toLowerCase();
 
   let rows = [...students].sort((a, b) =>
-    (a.class || "").localeCompare(b.class || "") || (Number(a.number) || 0) - (Number(b.number) || 0)
+    (a.class || "").localeCompare(b.class || "", undefined, { numeric: true }) || (Number(a.number) || 0) - (Number(b.number) || 0)
   );
 
   if (q) {
@@ -1429,37 +1429,87 @@ async function initApp() {
   }
 }
 
-function showStudentBadge(profile) {
+function showLoggedInBadge(label, onLogout) {
   const badge = document.getElementById("student-badge");
   const nameEl = document.getElementById("student-badge-name");
   if (!badge || !nameEl) return;
-  nameEl.textContent = profile.name;
+  nameEl.textContent = label;
   badge.classList.remove("hidden");
   badge.classList.add("flex");
   badge.onclick = () => {
-    if (confirm("ต้องการเปลี่ยนผู้ใช้ (ออกจากระบบ) หรือไม่?")) logoutStudent();
+    if (confirm("ต้องการเปลี่ยนผู้ใช้ (ออกจากระบบ) หรือไม่?")) onLogout();
   };
+}
+
+function showStudentBadge(profile) {
+  showLoggedInBadge(profile.name, logoutStudent);
+}
+
+function getSavedTeacher() {
+  try { return JSON.parse(localStorage.getItem("teacher_session") || "null"); }
+  catch (e) { return null; }
+}
+
+function logoutTeacher() {
+  localStorage.removeItem("teacher_session");
+  sessionStorage.removeItem("admin_unlocked");
+  location.reload();
+}
+
+function showTeacherBadge(teacher) {
+  showLoggedInBadge(teacher.name || "ครูผู้สอน", logoutTeacher);
 }
 
 function boot() {
   const loginScreen = document.getElementById("login-screen");
-  const saved = getSavedStudent();
-
   firebaseReady = initFirebaseIfPossible();
 
-  if (saved) {
-    currentStudent = saved;
+  // ---- คืนสถานะครู (ถ้าเคยล็อกอินไว้แล้ว) ----
+  const savedTeacher = getSavedTeacher();
+  if (savedTeacher) {
     loginScreen.classList.add("hidden");
-    showStudentBadge(saved);
-    // sync lastActive silently in the background (returning student)
-    syncStudentActivity({});
+    showTeacherBadge(savedTeacher);
     initApp();
     return;
   }
 
-  // ยังไม่เคยล็อกอิน — โชว์ฟอร์ม แล้วรอผู้ใช้กรอก
+  // ---- คืนสถานะนักเรียน (ถ้าเคยล็อกอินไว้แล้ว) ----
+  const savedStudent = getSavedStudent();
+  if (savedStudent) {
+    currentStudent = savedStudent;
+    loginScreen.classList.add("hidden");
+    showStudentBadge(savedStudent);
+    syncStudentActivity({}); // sync lastActive silently in the background
+    initApp();
+    return;
+  }
+
+  // ---- ยังไม่เคยล็อกอินเลย — โชว์ฟอร์ม ----
   if (window.lucide) lucide.createIcons();
-  document.getElementById("login-form").addEventListener("submit", async (e) => {
+
+  const studentTab = document.getElementById("role-tab-student");
+  const teacherTab = document.getElementById("role-tab-teacher");
+  const studentForm = document.getElementById("login-form");
+  const teacherForm = document.getElementById("teacher-login-form");
+  const subtitle = document.getElementById("login-subtitle");
+
+  studentTab.addEventListener("click", () => {
+    studentTab.classList.add("active");
+    teacherTab.classList.remove("active");
+    studentForm.classList.remove("hidden");
+    teacherForm.classList.add("hidden");
+    subtitle.textContent = "กรอกข้อมูลของคุณก่อนเริ่มเรียนนะครับ/ค่ะ";
+  });
+
+  teacherTab.addEventListener("click", () => {
+    teacherTab.classList.add("active");
+    studentTab.classList.remove("active");
+    teacherForm.classList.remove("hidden");
+    studentForm.classList.add("hidden");
+    subtitle.textContent = "สำหรับคุณครูผู้สอนเข้าดูภาพรวมของนักเรียน";
+  });
+
+  studentForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     const name = document.getElementById("login-name").value.trim();
     const cls = document.getElementById("login-class").value.trim();
@@ -1482,6 +1532,28 @@ function boot() {
     loginScreen.classList.add("hidden");
     showStudentBadge(profile);
     initApp();
+  });
+
+  teacherForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("teacher-name").value.trim();
+    const password = document.getElementById("teacher-password").value;
+    const errorEl = document.getElementById("teacher-login-error");
+
+    if (password !== ADMIN_PASSWORD) {
+      errorEl.classList.remove("hidden");
+      return;
+    }
+    errorEl.classList.add("hidden");
+
+    const teacher = { name: name || "ครูผู้สอน", loginAt: Date.now() };
+    localStorage.setItem("teacher_session", JSON.stringify(teacher));
+    sessionStorage.setItem("admin_unlocked", "1"); // ล็อกอินครูแล้ว = ปลดล็อก Admin ให้เลย ไม่ต้องกรอกรหัสซ้ำ
+
+    loginScreen.classList.add("hidden");
+    showTeacherBadge(teacher);
+    initApp();
+    goToTab("admin");
   });
 }
 

@@ -193,6 +193,8 @@
     background: white;
   }
   .login-input:focus { border-color: var(--maroon); }
+  .role-tab { color: #8a7a68; }
+  .role-tab.active { background: var(--maroon); color: white; }
 </style>
 </head>
 <body>
@@ -204,8 +206,19 @@
       <i data-lucide="graduation-cap" class="w-6 h-6 text-white"></i>
     </div>
     <h1 class="font-thai font-bold text-lg mb-1">อ21101 ภาษาอังกฤษ 1</h1>
-    <p class="font-thai text-xs mb-5" style="color:var(--muted);">กรอกข้อมูลของคุณก่อนเริ่มเรียนนะครับ/ค่ะ</p>
+    <p id="login-subtitle" class="font-thai text-xs mb-4" style="color:var(--muted);">กรอกข้อมูลของคุณก่อนเริ่มเรียนนะครับ/ค่ะ</p>
 
+    <!-- toggle: นักเรียน / ครู -->
+    <div class="grid grid-cols-2 gap-1.5 bg-[#fbeee0] rounded-xl p-1 mb-5">
+      <button type="button" id="role-tab-student" class="role-tab active flex items-center justify-center gap-1.5 rounded-lg py-2 text-sm font-semibold font-thai transition">
+        <i data-lucide="user-round" class="w-3.5 h-3.5"></i> นักเรียน
+      </button>
+      <button type="button" id="role-tab-teacher" class="role-tab flex items-center justify-center gap-1.5 rounded-lg py-2 text-sm font-semibold font-thai transition">
+        <i data-lucide="user-cog" class="w-3.5 h-3.5"></i> ครูผู้สอน
+      </button>
+    </div>
+
+    <!-- นักเรียน -->
     <form id="login-form" class="flex flex-col gap-3">
       <div>
         <label class="font-thai text-xs font-semibold block mb-1" style="color:var(--ink);">ชื่อ - นามสกุล</label>
@@ -236,6 +249,22 @@
         <i data-lucide="log-in" class="w-4 h-4"></i> เข้าสู่บทเรียน
       </button>
       <p id="login-error" class="text-xs text-red-500 hidden"></p>
+    </form>
+
+    <!-- ครูผู้สอน -->
+    <form id="teacher-login-form" class="flex flex-col gap-3 hidden">
+      <div>
+        <label class="font-thai text-xs font-semibold block mb-1" style="color:var(--ink);">ชื่อครู (ไม่บังคับ)</label>
+        <input type="text" id="teacher-name" class="login-input font-thai" placeholder="เช่น ครูแพตตี้">
+      </div>
+      <div>
+        <label class="font-thai text-xs font-semibold block mb-1" style="color:var(--ink);">รหัสผ่านครู</label>
+        <input type="password" id="teacher-password" class="login-input" placeholder="••••••••" required>
+      </div>
+      <button type="submit" id="teacher-login-submit" class="mt-2 w-full py-3 rounded-xl text-white font-semibold flex items-center justify-center gap-2 hover:opacity-90 transition" style="background:var(--maroon);">
+        <i data-lucide="shield-check" class="w-4 h-4"></i> เข้าสู่ระบบสำหรับครู
+      </button>
+      <p id="teacher-login-error" class="text-xs text-red-500 hidden">รหัสผ่านไม่ถูกต้อง</p>
     </form>
   </div>
 </div>
